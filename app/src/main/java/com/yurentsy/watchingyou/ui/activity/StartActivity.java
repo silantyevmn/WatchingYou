@@ -71,6 +71,5 @@ public class StartActivity extends MvpAppCompatActivity implements StartView {
 
     @Override
     public void init() {
-        // TODO: 28.10.2018 тут всякие запросы на доступ к функция ОС
     }
 }

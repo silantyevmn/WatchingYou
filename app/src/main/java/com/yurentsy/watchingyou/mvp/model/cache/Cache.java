@@ -7,9 +7,9 @@ import java.util.List;
 import io.reactivex.Observable;
 
 public interface Cache {
-    void put(Person person);
+    void putPerson(Person person);
 
-    void putAll(List<Person> list);
+    void putAllPersons(List<Person> list);
 
     Observable<Person> getPersonById(String id);
 

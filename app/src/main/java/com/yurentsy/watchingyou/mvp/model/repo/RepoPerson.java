@@ -24,7 +24,7 @@ public class RepoPerson implements Repo {
         if (NetworkStatus.isOnline()) {
             return api.getPersons().subscribeOn(Schedulers.io())
                     .doOnNext(list -> {
-                        cache.putAll(list);
+                        cache.putAllPersons(list);
                     });
             //return api.getPersons().subscribeOn(Schedulers.io());
         } else {

@@ -43,7 +43,6 @@ public class MainFragment extends MvpAppCompatFragment implements MainView, Back
 
     public static MainFragment getNewInstance() {
         MainFragment fragment = new MainFragment();
-        // TODO: 28.10.2018 если все же что-то добавил то fragment.setArguments(bundle)
         return fragment;
     }
 
@@ -96,7 +95,6 @@ public class MainFragment extends MvpAppCompatFragment implements MainView, Back
 
     @Override
     public void init() {
-        // TODO: 28.10.2018 adapter и все такое
         LinearLayoutManager manager = new LinearLayoutManager(getContext());
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(manager);

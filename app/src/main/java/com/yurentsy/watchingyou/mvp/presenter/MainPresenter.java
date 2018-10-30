@@ -31,8 +31,8 @@ public class MainPresenter extends MvpPresenter<MainView> {
 
         repo.getPersons()
                 .observeOn(scheduler)
-                .subscribe(persones -> {
-                    people.addAll(persones);
+                .subscribe(persons -> {
+                    people.addAll(persons);
                     getViewState().updateList();
                 });
     }
